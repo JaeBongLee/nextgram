@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.nhnnext.JaeBong.nextagram"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-permission android:name = "android.permission.INTERNET"/>
+    <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomListRow"
+            android:label="@string/title_activity_custom_list_row" >
+        </activity>
+        <activity
+            android:name=".ArticleWriter"
+            android:label="@string/title_activity_article_writer" >
+        </activity>
+        <activity
+            android:name="org.nhnnext.JaeBong.nextagram.ArticleViewer"
+            android:label="@string/title_activity_article_viewer" >
+        </activity>
+        <activity android:name="CommentList"></activity>
+    </application>
+
+</manifest>
